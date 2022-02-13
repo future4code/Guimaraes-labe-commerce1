@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import React from "react";
+import styled from "styled-components";
+import Home from "./pages/Home";
+export default class App extends React.Component {
+  addCart = () => {
+    alert("O produto foi adicionado ao carrinho");
+  };
+  render() {
+    return (
+      <div>
+        <header>
+          <nav>
+            <a href="#">
+              {" "}
+              <img
+                /* src='' ícone do CARRINHO DE COMPRAS*/ alt="ícone de carrinho de compras"
+              />{" "}
+            </a>
+          </nav>
+          <img /* src='' ícone do astronauta*/ alt="ícone de astronauta" />
+          <p>labeSPACE</p>
+        </header>
+        <main></main>
+      </div>
+    );
+  }
 }
-
-export default App;
