@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
+import ProductCards from "./components/ProductCards";
 
 export default class App extends React.Component {
   addCart = () => {
@@ -10,14 +11,12 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
-        
-          <Nav/>
-           
-          
-          
-          
-       
-        
+        <header>
+          <Nav />
+        </header>
+        <main>
+          <Home />
+        </main>
       </div>
     );
   }
