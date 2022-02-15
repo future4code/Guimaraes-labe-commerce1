@@ -9,7 +9,7 @@ const Header = styled.header`
         flex-direction: row-reverse;
         justify-content: flex-end;
         min-height: 5vh;
-        max-height:20vh;
+        max-height:30vh;
 
         @media screen and (max-width: 375px){
          width: 375px;
