@@ -5,11 +5,11 @@ import styled from "styled-components";
 
 const Header = styled.header`
         background: #7E5185;
-        width: 1280px;
         display: flex;
         flex-direction: row-reverse;
         justify-content: flex-end;
-        height: 20vh;
+        min-height: 5vh;
+        max-height:20vh;
 
         @media screen and (max-width: 375px){
          width: 375px;
@@ -47,7 +47,7 @@ const Linkcarrinho = styled.a`
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-left: 50vw;
+    margin-left: 10vw;
     margin-top: 5vh;
 
  @media screen and (max-width: 375px){
@@ -76,7 +76,7 @@ export default class Nav extends React.Component {
           </Linkcarrinho>
           <Logotitulo>
             <Logoastronauta src={logo} alt="ícone de astronauta" />
-            <Titulo>labeSPACE</Titulo>
+            <Titulo>labeSpace</Titulo>
           </Logotitulo>
         </Header>
       </div>
