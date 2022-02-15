@@ -51,7 +51,7 @@ const Linkcarrinho = styled.a`
     margin-top: 5vh;
 
  @media screen and (max-width: 375px){
-    margin-left: -35px;
+    margin-left: 5px;
     margin-top: 15px;
     }
 `
