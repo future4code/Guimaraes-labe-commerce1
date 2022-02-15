@@ -4,21 +4,28 @@ import logocarrinho from "../assets/logocarrinho.png";
 import styled from "styled-components";
 
 const Header = styled.header`
-     @media screen and (max-width: 375px){
-         background: #7E5185;
-         width: 375px;
-         display: flex;
-
-         flex-direction: row-reverse;
+        background: #7E5185;
+        width: 1280px;
+        display: flex;
+        flex-direction: row-reverse;
         justify-content: flex-end;
+        height: 20vh;
+
+        @media screen and (max-width: 375px){
+         width: 375px;
      }
-` 
-const Logotitulo= styled.div`
-    @media screen and (max-width: 375px) {
+`
+const Logotitulo = styled.div`
         display: flex;
         justify-content: center;
-        padding-top: 15px;
+       
+
+    @media screen and (max-width: 375px) {
+        padding-top: 50px;
         margin-left: 40px;
+        align-items: end;
+        
+
     }
 `
 const Logoastronauta = styled.img`
@@ -28,20 +35,30 @@ const Logoastronauta = styled.img`
     }
 `
 const Titulo = styled.h1`
+  color: #f3e2e2;
+  font-size: 4rem;
   @media screen and (max-width: 375px) {
-    color: #f3e2e2;
+    font-size: 3rem;
+    margin-block-end: auto;
+    
   }
 `
 const Linkcarrinho = styled.a`
- @media screen and (max-width: 375px){
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin-left: 50px;
+    margin-left: 50vw;
+    margin-top: 5vh;
+
+ @media screen and (max-width: 375px){
+    margin-left: -35px;
     margin-top: 15px;
     }
 `
 const Logocarrinho = styled.img`
+    width: 50px;
+    height: 50px;
+
  @media screen and (max-width: 375px){
      width: 29px;
      height: 27px;
@@ -55,12 +72,12 @@ export default class Nav extends React.Component {
         <Header>
           <Linkcarrinho href="#">
             {" "}
-            <Logocarrinho src={logocarrinho}  alt="" />{" "}
+            <Logocarrinho src={logocarrinho} alt="" />{" "}
           </Linkcarrinho>
-        <Logotitulo>
-          <Logoastronauta src={logo} alt="ícone de astronauta" />
-          <Titulo>labeSPACE</Titulo>
-        </Logotitulo>
+          <Logotitulo>
+            <Logoastronauta src={logo} alt="ícone de astronauta" />
+            <Titulo>labeSPACE</Titulo>
+          </Logotitulo>
         </Header>
       </div>
     );
