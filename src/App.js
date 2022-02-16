@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Nav from "./components/Nav";
 import Home from "./pages/Home";
 import ProductCards from "./components/ProductCards";
+import Carrinho from "./pages/Carrinho";
 
 const StyledHeader = styled.header`
   background-color: #7e5185;
@@ -15,10 +16,7 @@ const StyledHeader = styled.header`
 `;
 
 export default class App extends React.Component {
-  addCart = () => {
-    alert("O produto foi adicionado ao carrinho");
-  };
-  render() {
+    render() {    
     return (
       <div>
         <StyledHeader>
@@ -26,6 +24,7 @@ export default class App extends React.Component {
         </StyledHeader>
         <main>
           <Home />
+          
         </main>
       </div>
     );
