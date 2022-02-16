@@ -8,18 +8,23 @@ import imagem4 from "../assets/pedra4.jpg"; */
 
 const StyledMain = styled.main`
   background-color: #061826;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 `;
 
 const ProductContainer = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+   grid-area: 1 / 1 / 2 / 2 
   /* align-content: center;
   align-items: center; */
   border: 1px solid #ff2e00;
   border-radius: 10px;
   padding: 3.2vh 0.7320644216691069vw;
-  margin-bottom: 0.7320644216691069vw;
+  margin-bottom: 3.2vh;
+  margin-left: 1.6vh;
+  margin-right: 1.6vh;
   height: 32vh;
 `;
 
@@ -35,6 +40,18 @@ const StyledH3 = styled.h3`
   color: white;
 `;
 
+const StyledButton = styled.button`
+  color: ##ff2e00;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #404040 solid;
+  background-color: #ff2e00;
+  width: 100%;
+  cursor: pointer;
+`;
+
 export default class ProductCards extends React.Component {
   render() {
     return (
@@ -42,6 +59,7 @@ export default class ProductCards extends React.Component {
         <ProductContainer>
           <StyledH3>{this.props.produto}</StyledH3>
           <StyledImg src={this.props.imagem} />
+          <button src={this.props.botao} />
         </ProductContainer>
       </StyledMain>
     );

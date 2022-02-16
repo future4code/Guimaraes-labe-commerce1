@@ -8,7 +8,7 @@ const StyledHeader = styled.header`
   background-color: #7e5185;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-family: "Skranji", cursive;
   color: white;
   font-size: 2rem;
