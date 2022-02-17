@@ -3,36 +3,49 @@ import { Produtos } from "./Components/Produtos";
 import styled from "styled-components";
 import {Carrinho} from './Components/Carrinho'
 import logocarrinho from "./assets/logocarrinho.png"
+import astronauta from './assets/astronauta.png'
 
-import { CardProdutos } from "./Components/CardProdutos";
 
 const MainGrid = styled.div`
   display: grid;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: 4fr 1fr;
 `;
 const StyledHeader = styled.header`
+  display: grid;
+  grid-template-columns: 7fr 11fr 1fr;
   height: 25%;
-  width: 100%;
   background-color: #7e5185;
-  color: #d9b8c4;
-  font-size: 3rem;
-  font-family: "Skranji", cursive;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   align-items: center;
-  /*  margin-left: 0.36603221083455345vw;
-  margin-right: 0.36603221083455345vw; */
-  padding: 5px;
 `;
+
+const IconeAstronauta = styled.img`
+  width: 40%;
+  justify-self: self-end;
+`
+
+const Titulo = styled.h1`
+  color: #d9b8c4;
+  font-size: 5rem;
+  font-family: "Skranji", cursive;
+  letter-spacing: 6vh;
+`
 
 const StyledCart = styled.div`
   flex-direction: column;
   background-color: white;
 `;
+
+const BotaoCarrinho = styled.button`
+  background: none;
+  border: 0;
+  color: inherit;
+  margin: 0 auto;
+  border-radius: 10%;
+`
+
 const CarrinhoIcone = styled.img`
-width: 25px;
-height: 25px;
+  width: 25px;
+  height: 25px;
 `
 
 const products = [
@@ -90,13 +103,15 @@ class App extends React.Component {
         nome={product.name}
         preco={product.price}/>
       );
+      
     });
 
     return (
       <div>
         <StyledHeader>
-          <h4>labSpace</h4>
-          <button><CarrinhoIcone src={logocarrinho}/>{this.state.carrinho.length}</button>
+          <IconeAstronauta src={astronauta}/>
+          <Titulo>labSpace</Titulo>
+          <BotaoCarrinho><CarrinhoIcone src={logocarrinho}/> {this.state.carrinho.length}</BotaoCarrinho>
         </StyledHeader>
         <MainGrid>
           <Produtos
