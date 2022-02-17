@@ -1,6 +1,7 @@
 import React from "react";
 import { Produtos } from "./Components/Produtos";
 import styled from "styled-components";
+import {Carrinho} from './Components/Carrinho'
 
 import { CardProdutos } from "./Components/CardProdutos";
 
@@ -31,7 +32,6 @@ const StyledCart = styled.div`
   height: 95vh;
   padding: 10px;
   margin: 10px;
-  border: 1px solid black;
 `;
 const products = [
   {
@@ -78,12 +78,15 @@ class App extends React.Component {
 
   render() {
     console.log(this.state.carrinho);
+    
     const itensCarrinho = this.state.carrinho.map((product) => {
       return (
-        <CardProdutos key={product.id} item={product}>
-          <img src={product.imgUrl} /> <p>{product.name}</p>{" "}
-          <p>{product.price}</p>
-        </CardProdutos>
+        <Carrinho 
+        key={product.id} 
+        item={product} 
+        imagemProdutos={product.imgUrl} 
+        nome={product.name}
+        preco={product.price}/>
       );
     });
 
