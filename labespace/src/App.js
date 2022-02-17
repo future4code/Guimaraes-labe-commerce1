@@ -32,7 +32,7 @@ const products = [
     name: "Pedra Mística de Cogumelo",
     price: 400,
     imgUrl:
-      "https://i.pinimg.com/originals/bf/96/48/bf9648be9dd4a19f012bfc2b35aa3dd9.jpg",
+      "https://images.pexels.com/photos/3725709/pexels-photo-3725709.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
   },
   
 ];
