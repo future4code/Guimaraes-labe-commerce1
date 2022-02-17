@@ -2,6 +2,7 @@ import React from "react";
 import { Produtos } from "./Components/Produtos";
 import styled from "styled-components";
 import {Carrinho} from './Components/Carrinho'
+import logocarrinho from "./assets/logocarrinho.png"
 
 import { CardProdutos } from "./Components/CardProdutos";
 
@@ -33,6 +34,11 @@ const StyledCart = styled.div`
   padding: 10px;
   margin: 10px;
 `;
+const CarrinhoIcone = styled.img`
+width: 25px;
+height: 25px;
+`
+
 const products = [
   {
     id: 1,
@@ -93,8 +99,8 @@ class App extends React.Component {
     return (
       <div>
         <StyledHeader>
-          <h4>labEspaço</h4>
-          <button>Ir para o Carrinho {this.state.carrinho.length}</button>
+          <h4>labSpace</h4>
+          <button><CarrinhoIcone src={logocarrinho}/>{this.state.carrinho.length}</button>
         </StyledHeader>
         <MainGrid>
           <Produtos
