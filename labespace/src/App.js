@@ -29,10 +29,6 @@ const StyledHeader = styled.header`
 const StyledCart = styled.div`
   flex-direction: column;
   background-color: white;
-  width: 400px;
-  height: 95vh;
-  padding: 10px;
-  margin: 10px;
 `;
 const CarrinhoIcone = styled.img`
 width: 25px;

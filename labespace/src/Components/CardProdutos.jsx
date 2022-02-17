@@ -2,9 +2,10 @@ import React from "react";
 import styled from "styled-components";
 
 export const ContainerProdutos = styled.div`
-  display: inline-flex;
+  display: flex;
   margin: 0 auto;
   text-align: center;
+  justify-content: center;
   // background-image: ;
 `;
 
