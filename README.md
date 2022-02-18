@@ -15,9 +15,9 @@
 
 O projeto foi desenvolvido usando as seguintes tecnologias:
 
-* [React](https://pt-br.reactjs.org/docs/getting-started.html)
+* ⚛️[React](https://pt-br.reactjs.org/docs/getting-started.html) 
 
-* [Styled-Components](https://styled-components.com/docs)
+* 💅[Styled-Components](https://styled-components.com/docs)
 
 
 
