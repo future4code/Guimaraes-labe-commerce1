@@ -10,6 +10,10 @@
  * Caio Porto Ramos
  * Camila Coradi Garcia Leal
  * Laíne Reis de Moura
+ 
+ <h3>✅ Features</h3>
+ 
+ 
 
 <h3>👨‍💻 Tecnologias utilizadas</h3>
 
