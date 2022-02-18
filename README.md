@@ -27,6 +27,10 @@
  * Filtro
   - [x] Por valor mínimo e máximo
   - [x] Por nome do produto
+  
+ * 🏅  Desafios
+  
+  
  
 
 <h3>👨‍💻 Tecnologias utilizadas</h3>
