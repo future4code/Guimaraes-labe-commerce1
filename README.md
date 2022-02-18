@@ -21,10 +21,12 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 
 <h2>Versão Mobile</h2>
 
+![mobile](https://user-images.githubusercontent.com/93163329/154698368-039886ac-a329-4c45-b6d5-4f990a803d4c.JPG)
 
 <h2>Versão Desktop</h2>
 
 
+![desktop](https://user-images.githubusercontent.com/93163329/154698391-3f292204-0a94-4830-9731-f14bdf903f00.JPG)
 
 
 
