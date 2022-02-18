@@ -137,6 +137,21 @@ class App extends React.Component {
       );
     });
 
+ guardarCarrinho = () => {
+const carrinhoSalvo =[...itensCarrinho];
+localStorage.setItem("carrinhoSalvo", JSON.stringify(carrinhoSalvo))
+
+}
+pegarCarrinho = () => {
+const carrinhoString = localStorage.getItem("carrinhoSalvo");
+const carrinhosArray = JSON.parse(carrinhoString);
+return carrinhosArray;
+
+
+}
+
+}
+
     return (
       <div>
         <StyledHeader>
@@ -156,6 +171,8 @@ class App extends React.Component {
             <h2>Carrinho:</h2>
 
             {itensCarrinho}
+
+
           </StyledCart>
         </MainGrid>
         <StyledFooter>
