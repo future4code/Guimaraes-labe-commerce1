@@ -3,7 +3,7 @@
 
  <h2></h2>
 
-🌎 [labSpace](https://www.google.com.br/) 
+🌎 [labSpace](https://quick-faucet.surge.sh/) 
 
 <h3>👨‍🚀 Desenvolvedores</h3>
 
@@ -45,12 +45,9 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 
 <h2>Versão Desktop</h2>
 
-![desktop](https://user-images.githubusercontent.com/93163329/154706172-f7b2ac72-02d0-4909-918e-4d3a4076c807.JPG)
+![Captura de tela 2022-02-18 133825](https://user-images.githubusercontent.com/93163329/154767771-522d2ab7-cd2c-45e7-8cf5-a0d536141091.png)
 
 
-<h2>Versão Mobile</h2>
-
-![mobile](https://user-images.githubusercontent.com/93163329/154706250-3019c7a5-7514-4914-b9ba-5f9c0e7cfb3e.JPG)
 
 
 
