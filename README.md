@@ -25,7 +25,8 @@
  - [ ] Mostrar o valor total do carrinho
  
  * Filtro
- - [ ]
+  - [ ] Por valor mínimo e máximo
+  - [ ] 
  
 
 <h3>👨‍💻 Tecnologias utilizadas</h3>
