@@ -13,6 +13,11 @@
  
  <h3>✅ Features</h3>
  
+ * Home
+- [x]
+- [x]
+- [x] 
+ 
  
 
 <h3>👨‍💻 Tecnologias utilizadas</h3>
