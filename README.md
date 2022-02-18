@@ -38,12 +38,15 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 * 💅[Styled-Components](https://styled-components.com/docs)
 
 
-
-
 <h2>Versão Desktop</h2>
-![desktop](https://user-images.githubusercontent.com/93163329/154698391-3f292204-0a94-4830-9731-f14bdf903f00.JPG)
+
+![desktop](https://user-images.githubusercontent.com/93163329/154706172-f7b2ac72-02d0-4909-918e-4d3a4076c807.JPG)
+
+
 <h2>Versão Mobile</h2>
-![mobile](https://user-images.githubusercontent.com/93163329/154698368-039886ac-a329-4c45-b6d5-4f990a803d4c.JPG)
+
+![mobile](https://user-images.githubusercontent.com/93163329/154706250-3019c7a5-7514-4914-b9ba-5f9c0e7cfb3e.JPG)
+
 
 
 
