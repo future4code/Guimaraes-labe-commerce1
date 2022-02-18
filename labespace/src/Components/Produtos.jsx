@@ -1,13 +1,19 @@
 import React from "react";
 import { CardProdutos } from "./CardProdutos";
+import styled from 'styled-components'
+
+const Filtros = styled.div`
+text-align: center;
+`
 
 export class Produtos extends React.Component {
   state = {
-    ordenacao: "Decrescente",
+    ordenacao: "Crescente",
     query: "",
     minPrice: "",
     maxPrice: "",
   };
+
 
   ordenarProdutos = (e) => {
     this.setState({
@@ -29,9 +35,9 @@ export class Produtos extends React.Component {
   render() {
     const produtosOrdenados = this.props.produtos
       .sort((a, b) => {
-        return this.state.ordenacao === "Crescente"
-          ? a.price - b.price
-          : b.price - a.price;
+        return this.state.ordenacao === "Decrescente"
+          ? b.price - a.price
+          : a.price - b.price;
       })
       .filter((produto) => {
         return produto.name
@@ -66,14 +72,14 @@ export class Produtos extends React.Component {
             Quantidade de produtos: {this.props.quantidadeDeProdutos.length}
           </p>
           <label>
-            Ordenação:
+            Valor:
             <select onChange={this.ordenarProdutos}>
-              <option value={"Decrescente"}>Decrescente</option>
-              <option value={"Crescente"}>Crescente</option>
+              <option value={"Crescente"}>Menor ao maior</option>
+              <option value={"Decrescente"}>Maior ao menor</option>
             </select>
           </label>
         </div>
-        <div>
+        <Filtros>
           <input
             placeholder="Pesquisa"
             value={this.state.query}
@@ -93,8 +99,8 @@ export class Produtos extends React.Component {
             value={this.state.maxPrice}
             onChange={this.updateMaxPrice}
           />
-          {this.state.query}
-        </div>
+          <p> {this.state.query ? 'Você pesquisou por: ' + this.state.query : null}</p>
+        </Filtros>
         <div>{produtosOrdenados}</div>
       </div>
     );

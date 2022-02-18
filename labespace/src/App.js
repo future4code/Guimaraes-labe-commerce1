@@ -126,6 +126,15 @@ const ValorTotal = styled.p`
 
 `
 
+const BtnLimpaCarrinho = styled.button`
+  display:flex;
+  color: inherit;
+  margin: 0 auto;
+  border-radius: 10%;
+  text-align: center;
+  justify-self:center;
+`
+
 
 
 
@@ -192,6 +201,9 @@ class App extends React.Component {
       carrinho: [...this.state.carrinho, products],
     });
   };
+  onClickLimpaCarrinho = (e) => {
+    this.setState({carrinho: []});
+  }
 
   render() {
     console.log(this.state.carrinho);
@@ -233,6 +245,8 @@ class App extends React.Component {
 
             {itensCarrinho}
             <ValorTotal>Total: {somaCompras}</ValorTotal>
+            <BtnLimpaCarrinho onClick={this.onClickLimpaCarrinho}>Limpar Carrinho</BtnLimpaCarrinho>
+           
           </StyledCart>
         </MainGrid>
         <StyledFooter>
