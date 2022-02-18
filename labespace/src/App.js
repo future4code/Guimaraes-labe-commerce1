@@ -4,6 +4,9 @@ import styled from "styled-components";
 import { Carrinho } from "./Components/Carrinho";
 import logocarrinho from "./assets/logocarrinho.png";
 import astronauta from "./assets/astronauta.png";
+import facebook from "./assets/facebook.png"
+import twitter from "./assets/twitter.png"
+import instagram from "./assets/instagram.png"
 
 const MainGrid = styled.div`
   display: grid;
@@ -58,6 +61,12 @@ const StyledFooter = styled.footer`
   align-content: center;
   border-top: 0.4px solid #fff2e7;
   padding: 32px;
+
+  img{
+    height: 5vh;
+    filter: invert(95%) sepia(13%) saturate(406%) hue-rotate(337deg) brightness(105%) contrast(107%);
+  }
+  
 `;
 const StyledH3 = styled.h3`
   color: #fff2e7;
@@ -156,8 +165,7 @@ class App extends React.Component {
             href="https://twitter.com/"
             rel="noreferrer"
           >
-            {" "}
-            Twitter
+            <img src={twitter}/>
           </StyledLinks>
 
           <StyledLinks
@@ -165,8 +173,7 @@ class App extends React.Component {
             href="https://facebook.com/"
             rel="noreferrer"
           >
-            {" "}
-            Facebook{" "}
+           <img src={facebook}/>
           </StyledLinks>
 
           <StyledLinks
@@ -174,8 +181,7 @@ class App extends React.Component {
             href="https://instagram.com/"
             rel="noreferrer"
           >
-            {" "}
-            Instagram
+            <img src={instagram}/>
           </StyledLinks>
         </StyledFooter>
       </div>
