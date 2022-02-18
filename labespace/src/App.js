@@ -12,13 +12,14 @@ const MainGrid = styled.div`
   display: grid;
   grid-template-columns: 4fr 1fr;
 
+
   /* @media screen and (min-device-width : 320px) and (max-device-width : 667px){
     width: 100%;
   } */
 `;
 const StyledHeader = styled.header`
   display: grid;
-  grid-template-columns: 7fr 11fr 1fr;
+  grid-template-columns: 7fr 9fr 5fr;
   height: 25%;
   background-color: #7e5185;
   align-items: center;
@@ -33,11 +34,11 @@ const StyledHeader = styled.header`
 `;
 
 const IconeAstronauta = styled.img`
-  width: 40%;
+  width: 30%;
   justify-self: self-end;
 
   @media screen and (min-device-width : 320px) and (max-device-width : 667px){
-  width: 25%;
+  width: 15%;
   justify-self: self-end;
 
   }
@@ -45,7 +46,7 @@ const IconeAstronauta = styled.img`
 
 const Titulo = styled.h1`
   color: #d9b8c4;
-  font-size: 50px;
+  font-size: 3rem;
   font-family: "Skranji", cursive;
   /* letter-spacing: 6vh; */
 
@@ -81,19 +82,27 @@ const StyledFooter = styled.footer`
   background-color: #7e5185;
   display: flex;
   height: 20%;
-  flex-direction: column;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   align-content: center;
   border-top: 0.4px solid #fff2e7;
   padding: 32px;
+  position: relative;
+  top: 3vh;
+  display: flow-root;
+  height: 100%;
 
   img{
     height: 5vh;
     filter: invert(95%) sepia(13%) saturate(406%) hue-rotate(337deg) brightness(105%) contrast(107%);
+    
   }
+
+
   
 `;
+
 const StyledH3 = styled.h3`
   color: #fff2e7;
   font-size: 1.5rem;
@@ -104,6 +113,8 @@ const StyledLinks = styled.a`
   color: #fff2e7;
   font-size: 0.8rem;
   font-family: "Work Sans", sans-serif;
+  
+  
 `;
 const products = [
   {
@@ -140,6 +151,24 @@ class App extends React.Component {
   state = {
     carrinho: [],
   };
+
+  componentDidUpdate() {
+    const carrinho = this.state.carrinho;
+    localStorage.setItem("carrinho", JSON.stringify(carrinho));
+  }
+
+  componentDidMount() {
+
+    if (localStorage.getItem("carrinho")) {
+      const carrinhoLS = localStorage.getItem("carrinho");
+      const carrinhoObjetos = JSON.parse(carrinhoLS);
+  
+      this.setState({
+        carrinho: carrinhoObjetos
+      });
+  
+    }
+  }
 
   adicionarProdutoNoCarrinho = (products) => {
     console.log("está funcionando!");
