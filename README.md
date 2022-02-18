@@ -25,6 +25,8 @@
  - [ ] Mostrar o valor total do carrinho
  
  * Filtro
+ - [ ]
+ 
 
 <h3>👨‍💻 Tecnologias utilizadas</h3>
 
