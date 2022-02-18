@@ -16,7 +16,7 @@
  * Home
 - [x] Mostrando todos os produtos
 - [x] Ordenar os produtos por ordem crescente ou decrescente de preço
-- [x] 
+- [x] Devem ter um botão que permita adicioná-los ao carrinho
  
  
 
