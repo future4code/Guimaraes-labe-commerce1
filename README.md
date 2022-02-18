@@ -26,7 +26,7 @@
  
  * Filtro
   - [x] Por valor mínimo e máximo
-  - [ ] Por nome do produto
+  - [x] Por nome do produto
  
 
 <h3>👨‍💻 Tecnologias utilizadas</h3>
