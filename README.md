@@ -14,7 +14,7 @@
  <h3>✅ Features</h3>
  
  * Home
-- [x]
+- [x] Mostrando todos os produtos
 - [x]
 - [x] 
  
