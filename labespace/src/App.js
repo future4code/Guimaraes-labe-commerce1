@@ -11,6 +11,10 @@ import instagram from "./assets/instagram.png"
 const MainGrid = styled.div`
   display: grid;
   grid-template-columns: 4fr 1fr;
+
+  /* @media screen and (min-device-width : 320px) and (max-device-width : 667px){
+    width: 100%;
+  } */
 `;
 const StyledHeader = styled.header`
   display: grid;
@@ -19,18 +23,39 @@ const StyledHeader = styled.header`
   background-color: #7e5185;
   align-items: center;
   border-bottom: 0.4px solid #fff2e7;
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 667px){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+  }
 `;
 
 const IconeAstronauta = styled.img`
   width: 40%;
   justify-self: self-end;
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 667px){
+  width: 25%;
+  justify-self: self-end;
+
+  }
 `;
 
 const Titulo = styled.h1`
   color: #d9b8c4;
-  font-size: 5rem;
+  font-size: 50px;
   font-family: "Skranji", cursive;
-  letter-spacing: 6vh;
+  /* letter-spacing: 6vh; */
+
+  @media screen and (min-device-width : 320px) and (max-device-width : 667px){
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-family: 15px;
+
+  }
 `;
 
 const StyledCart = styled.div`
@@ -52,6 +77,7 @@ const CarrinhoIcone = styled.img`
 `;
 
 const StyledFooter = styled.footer`
+  
   background-color: #7e5185;
   display: flex;
   height: 20%;
