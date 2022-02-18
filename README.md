@@ -5,13 +5,13 @@
 
 :link: 🌎 Espaço reservado para LinkSurge
 
-👨‍🚀 Desenvolvedores
+<h3>👨‍🚀 Desenvolvedores</h3>
 
  * Caio Porto Ramos
  * Camila Coradi Garcia Leal
  * Laíne Reis de Moura
 
-🚀 Tecnologias utilizadas
+<h3>👨‍💻 Tecnologias utilizadas</h3>
 
 O projeto foi desenvolvido usando as seguintes tecnologias:
 
