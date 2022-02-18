@@ -27,8 +27,8 @@ export const BotaoAddCarrinho = styled.button`
 `;
 
 const ImagemItem = styled.img`
-  width: 20vw;
-  height: 30vh;
+  width: 30vw;
+  height: 25vh;
   &:hover {
     transform: scale(1.1);
   }
