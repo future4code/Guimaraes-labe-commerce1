@@ -114,8 +114,13 @@ const StyledLinks = styled.a`
   font-size: 0.8rem;
   font-family: "Work Sans", sans-serif;
   
-  
 `;
+
+const ValorTotal = styled.p`
+  font-weight: 700;
+  text-align: center;
+  background: #e0e0e0;
+`
 const products = [
   {
     id: 1,
@@ -192,6 +197,11 @@ class App extends React.Component {
       );
     });
 
+    const somaCompras = this.state.carrinho.map((product) => { 
+      return product.price }).reduce((anterior, atual) => {
+      return anterior + atual
+    }, 0)
+
     return (
       <div>
         <StyledHeader>
@@ -211,6 +221,7 @@ class App extends React.Component {
             <h2>Carrinho:</h2>
 
             {itensCarrinho}
+            <ValorTotal>Total: {somaCompras}</ValorTotal>
           </StyledCart>
         </MainGrid>
         <StyledFooter>
