@@ -4,14 +4,13 @@ import styled from "styled-components";
 import { Carrinho } from "./Components/Carrinho";
 import logocarrinho from "./assets/logocarrinho.png";
 import astronauta from "./assets/astronauta.png";
-import facebook from "./assets/facebook.png"
-import twitter from "./assets/twitter.png"
-import instagram from "./assets/instagram.png"
+import facebook from "./assets/facebook.png";
+import twitter from "./assets/twitter.png";
+import instagram from "./assets/instagram.png";
 
 const MainGrid = styled.div`
   display: grid;
   grid-template-columns: 4fr 1fr;
-
 
   /* @media screen and (min-device-width : 320px) and (max-device-width : 667px){
     width: 100%;
@@ -25,11 +24,10 @@ const StyledHeader = styled.header`
   align-items: center;
   border-bottom: 0.4px solid #fff2e7;
 
-  @media screen and (min-device-width : 320px) and (max-device-width : 667px){
+  @media screen and (min-device-width: 320px) and (max-device-width: 667px) {
     display: flex;
     justify-content: space-between;
     width: 100%;
-
   }
 `;
 
@@ -37,10 +35,9 @@ const IconeAstronauta = styled.img`
   width: 30%;
   justify-self: self-end;
 
-  @media screen and (min-device-width : 320px) and (max-device-width : 667px){
-  width: 15%;
-  justify-self: self-end;
-
+  @media screen and (min-device-width: 320px) and (max-device-width: 667px) {
+    width: 15%;
+    justify-self: self-end;
   }
 `;
 
@@ -50,12 +47,11 @@ const Titulo = styled.h1`
   font-family: "Skranji", cursive;
   /* letter-spacing: 6vh; */
 
-  @media screen and (min-device-width : 320px) and (max-device-width : 667px){
+  @media screen and (min-device-width: 320px) and (max-device-width: 667px) {
     display: flex;
     justify-content: space-between;
     width: 100%;
     font-family: 15px;
-
   }
 `;
 
@@ -78,7 +74,6 @@ const CarrinhoIcone = styled.img`
 `;
 
 const StyledFooter = styled.footer`
-  
   background-color: #7e5185;
   display: flex;
   height: 20%;
@@ -93,14 +88,11 @@ const StyledFooter = styled.footer`
   display: flow-root;
   height: 100%;
 
-  img{
+  img {
     height: 5vh;
-    filter: invert(95%) sepia(13%) saturate(406%) hue-rotate(337deg) brightness(105%) contrast(107%);
-    
+    filter: invert(95%) sepia(13%) saturate(406%) hue-rotate(337deg)
+      brightness(105%) contrast(107%);
   }
-
-
-  
 `;
 
 const StyledH3 = styled.h3`
@@ -113,8 +105,6 @@ const StyledLinks = styled.a`
   color: #fff2e7;
   font-size: 0.8rem;
   font-family: "Work Sans", sans-serif;
-  
-  
 `;
 const products = [
   {
@@ -158,15 +148,13 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-
     if (localStorage.getItem("carrinho")) {
       const carrinhoLS = localStorage.getItem("carrinho");
       const carrinhoObjetos = JSON.parse(carrinhoLS);
-  
+
       this.setState({
-        carrinho: carrinhoObjetos
+        carrinho: carrinhoObjetos,
       });
-  
     }
   }
 
@@ -220,7 +208,7 @@ class App extends React.Component {
             href="https://twitter.com/"
             rel="noreferrer"
           >
-            <img src={twitter}/>
+            <img src={twitter} />
           </StyledLinks>
 
           <StyledLinks
@@ -228,7 +216,7 @@ class App extends React.Component {
             href="https://facebook.com/"
             rel="noreferrer"
           >
-           <img src={facebook}/>
+            <img src={facebook} />
           </StyledLinks>
 
           <StyledLinks
@@ -236,7 +224,7 @@ class App extends React.Component {
             href="https://instagram.com/"
             rel="noreferrer"
           >
-            <img src={instagram}/>
+            <img src={instagram} />
           </StyledLinks>
         </StyledFooter>
       </div>
