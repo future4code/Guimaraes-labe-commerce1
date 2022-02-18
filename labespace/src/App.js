@@ -80,17 +80,12 @@ const CarrinhoIcone = styled.img`
 const StyledFooter = styled.footer`
   
   background-color: #7e5185;
-  display: flex;
   height: 20%;
   flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  align-content: center;
+  justify-items: center;
   border-top: 0.4px solid #fff2e7;
   padding: 32px;
-  position: relative;
   top: 3vh;
-  display: flow-root;
   height: 100%;
 
   img{
@@ -107,20 +102,34 @@ const StyledH3 = styled.h3`
   color: #fff2e7;
   font-size: 1.5rem;
   font-family: "Work Sans", sans-serif;
+  text-align: center;
+
 `;
 
 const StyledLinks = styled.a`
   color: #fff2e7;
   font-size: 0.8rem;
   font-family: "Work Sans", sans-serif;
+  margin: 0 1vw;
   
 `;
+
+const ContainerRedesSociais =  styled.div`
+display: flex;
+place-content: center;
+`
 
 const ValorTotal = styled.p`
   font-weight: 700;
   text-align: center;
   background: #e0e0e0;
+
 `
+
+
+
+
+/* ARRAY DE OBJETOS */
 const products = [
   {
     id: 1,
@@ -151,6 +160,8 @@ const products = [
       "https://images.pexels.com/photos/3725709/pexels-photo-3725709.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260",
   },
 ];
+
+/* FIM DO ARRAY DE OBJETOS */
 
 class App extends React.Component {
   state = {
@@ -226,29 +237,29 @@ class App extends React.Component {
         </MainGrid>
         <StyledFooter>
           <StyledH3> Também estamos por aqui...</StyledH3>
-          <StyledLinks
-            target="_blank"
-            href="https://twitter.com/"
-            rel="noreferrer"
-          >
-            <img src={twitter}/>
-          </StyledLinks>
-
-          <StyledLinks
-            target="_blank"
-            href="https://facebook.com/"
-            rel="noreferrer"
-          >
-           <img src={facebook}/>
-          </StyledLinks>
-
-          <StyledLinks
-            target="_blank"
-            href="https://instagram.com/"
-            rel="noreferrer"
-          >
-            <img src={instagram}/>
-          </StyledLinks>
+              <ContainerRedesSociais>
+                <StyledLinks
+                  target="_blank"
+                  href="https://twitter.com/"
+                  rel="noreferrer"
+                >
+                  <img src={twitter}/>
+                </StyledLinks>
+                <StyledLinks
+                  target="_blank"
+                  href="https://facebook.com/"
+                  rel="noreferrer"
+                >
+                <img src={facebook}/>
+                </StyledLinks>
+                <StyledLinks
+                  target="_blank"
+                  href="https://instagram.com/"
+                  rel="noreferrer"
+                >
+                  <img src={instagram}/>
+                </StyledLinks>
+              </ContainerRedesSociais>
         </StyledFooter>
       </div>
     );
