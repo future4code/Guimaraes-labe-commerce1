@@ -21,7 +21,7 @@
 
  * Carrinho 
  - [x] Mostrar todos os produtos e quantidades adicionadas
- - [ ] Capacidade de remover itens do carrinho
+ - [x] Capacidade de remover itens do carrinho
  - [x] Mostrar o valor total do carrinho
  
  * Filtro
