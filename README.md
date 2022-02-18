@@ -45,12 +45,9 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 
 <h2>Versão Desktop</h2>
 
-![Captura de tela 2022-02-18 133825](https://user-images.githubusercontent.com/93163329/154767771-522d2ab7-cd2c-45e7-8cf5-a0d536141091.png)
-
-![Captura de tela 2022-02-18 190901](https://user-images.githubusercontent.com/93163329/154767921-a68e8627-e6ff-4fad-a730-d3568b31a589.png)
-
-
-
+![Captura de tela de 2022-02-18 19-42-29](https://user-images.githubusercontent.com/56762847/154771188-5b189626-b6f9-4b4c-9923-0d12de256b8f.png)
+![Captura de tela de 2022-02-18 19-42-42](https://user-images.githubusercontent.com/56762847/154771194-5100fece-d965-48bd-8d8f-edbba088edd5.png)
+![Captura de tela de 2022-02-18 19-43-01](https://user-images.githubusercontent.com/56762847/154771196-45debfdd-a087-409d-b890-5b9548d739f4.png)
 
 
 
