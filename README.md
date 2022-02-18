@@ -25,7 +25,7 @@
  - [x] Mostrar o valor total do carrinho
  
  * Filtro
-  - [ ] Por valor mínimo e máximo
+  - [x] Por valor mínimo e máximo
   - [ ] Por nome do produto
  
 
