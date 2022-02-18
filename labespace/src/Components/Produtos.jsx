@@ -13,7 +13,7 @@ export class Produtos extends React.Component {
     minPrice: "",
     maxPrice: "",
   };
-  
+
 
   ordenarProdutos = (e) => {
     this.setState({
