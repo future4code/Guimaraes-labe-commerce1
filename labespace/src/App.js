@@ -1,10 +1,9 @@
 import React from "react";
 import { Produtos } from "./Components/Produtos";
 import styled from "styled-components";
-import {Carrinho} from './Components/Carrinho'
-import logocarrinho from "./assets/logocarrinho.png"
-import astronauta from './assets/astronauta.png'
-
+import { Carrinho } from "./Components/Carrinho";
+import logocarrinho from "./assets/logocarrinho.png";
+import astronauta from "./assets/astronauta.png";
 
 const MainGrid = styled.div`
   display: grid;
@@ -16,19 +15,20 @@ const StyledHeader = styled.header`
   height: 25%;
   background-color: #7e5185;
   align-items: center;
+  border-bottom: 0.4px solid #fff2e7;
 `;
 
 const IconeAstronauta = styled.img`
   width: 40%;
   justify-self: self-end;
-`
+`;
 
 const Titulo = styled.h1`
   color: #d9b8c4;
   font-size: 5rem;
   font-family: "Skranji", cursive;
   letter-spacing: 6vh;
-`
+`;
 
 const StyledCart = styled.div`
   flex-direction: column;
@@ -41,13 +41,35 @@ const BotaoCarrinho = styled.button`
   color: inherit;
   margin: 0 auto;
   border-radius: 10%;
-`
+`;
 
 const CarrinhoIcone = styled.img`
   width: 25px;
   height: 25px;
-`
+`;
 
+const StyledFooter = styled.footer`
+  background-color: #7e5185;
+  display: flex;
+  height: 20%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  border-top: 0.4px solid #fff2e7;
+  padding: 32px;
+`;
+const StyledH3 = styled.h3`
+  color: #fff2e7;
+  font-size: 1.5rem;
+  font-family: "Work Sans", sans-serif;
+`;
+
+const StyledLinks = styled.a`
+  color: #fff2e7;
+  font-size: 0.8rem;
+  font-family: "Work Sans", sans-serif;
+`;
 const products = [
   {
     id: 1,
@@ -93,25 +115,27 @@ class App extends React.Component {
 
   render() {
     console.log(this.state.carrinho);
-    
+
     const itensCarrinho = this.state.carrinho.map((product) => {
       return (
-        <Carrinho 
-        key={product.id} 
-        item={product} 
-        imagemProdutos={product.imgUrl} 
-        nome={product.name}
-        preco={product.price}/>
+        <Carrinho
+          key={product.id}
+          item={product}
+          imagemProdutos={product.imgUrl}
+          nome={product.name}
+          preco={product.price}
+        />
       );
-      
     });
 
     return (
       <div>
         <StyledHeader>
-          <IconeAstronauta src={astronauta}/>
+          <IconeAstronauta src={astronauta} />
           <Titulo>labSpace</Titulo>
-          <BotaoCarrinho><CarrinhoIcone src={logocarrinho}/> {this.state.carrinho.length}</BotaoCarrinho>
+          <BotaoCarrinho>
+            <CarrinhoIcone src={logocarrinho} /> {this.state.carrinho.length}
+          </BotaoCarrinho>
         </StyledHeader>
         <MainGrid>
           <Produtos
@@ -125,7 +149,35 @@ class App extends React.Component {
             {itensCarrinho}
           </StyledCart>
         </MainGrid>
-        <footer></footer>
+        <StyledFooter>
+          <StyledH3> Também estamos por aqui...</StyledH3>
+          <StyledLinks
+            target="_blank"
+            href="https://twitter.com/"
+            rel="noreferrer"
+          >
+            {" "}
+            Twitter
+          </StyledLinks>
+
+          <StyledLinks
+            target="_blank"
+            href="https://facebook.com/"
+            rel="noreferrer"
+          >
+            {" "}
+            Facebook{" "}
+          </StyledLinks>
+
+          <StyledLinks
+            target="_blank"
+            href="https://instagram.com/"
+            rel="noreferrer"
+          >
+            {" "}
+            Instagram
+          </StyledLinks>
+        </StyledFooter>
       </div>
     );
   }
