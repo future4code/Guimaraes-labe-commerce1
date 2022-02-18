@@ -49,6 +49,9 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 ![Captura de tela de 2022-02-18 19-42-42](https://user-images.githubusercontent.com/56762847/154771194-5100fece-d965-48bd-8d8f-edbba088edd5.png)
 ![Captura de tela de 2022-02-18 19-43-01](https://user-images.githubusercontent.com/56762847/154771196-45debfdd-a087-409d-b890-5b9548d739f4.png)
 
+<h2>Versão Mobile</h2>
+
+![Mobile](https://user-images.githubusercontent.com/93163329/154771556-0734ce19-432b-4fb2-ab91-a38868566813.png)
 
 
 
