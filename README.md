@@ -23,6 +23,8 @@
  - [x] Mostrar todos os produtos e quantidades adicionadas
  - [ ] Capacidade de remover itens do carrinho
  - [ ] Mostrar o valor total do carrinho
+ 
+ * Filtro
 
 <h3>👨‍💻 Tecnologias utilizadas</h3>
 
