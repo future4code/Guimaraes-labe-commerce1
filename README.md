@@ -19,8 +19,9 @@
 - [x] Devem ter um botão que permita adicioná-los ao carrinho
 - [x] Devem exibir o nome, preço e imagem em um card
 
- * Carrinho
- -[x] Mostrar todos os produtos e quantidades adicionadas
+ * Carrinho 
+ - [x] Mostrar todos os produtos e quantidades adicionadas
+ - [ ] Capacidade de remover itens do carrinho
 
 <h3>👨‍💻 Tecnologias utilizadas</h3>
 
