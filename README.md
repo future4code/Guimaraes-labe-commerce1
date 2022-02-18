@@ -19,6 +19,11 @@ O projeto foi desenvolvido usando as seguintes tecnologias:
 
 * 💅[Styled-Components](https://styled-components.com/docs)
 
+<h2>Versão Mobile</h2>
+
+
+<h2>Versão Desktop</h2>
+
 
 
 
