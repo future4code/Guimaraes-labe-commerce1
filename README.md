@@ -29,7 +29,7 @@
   - [x] Por nome do produto
   
  * 🏅  Desafios
- - [x] 
+ - [x] Salvar e Recuperar conteúdo do carrinho usando o LocalStorage
   
   
  
