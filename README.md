@@ -15,7 +15,7 @@
  
  * Home
 - [x] Mostrando todos os produtos
-- [x]
+- [x] Deve haver alguma forma de ordenar os produtos por ordem crescente ou decrescente de preço (pode ser na home em si ou junto dos filtros)
 - [x] 
  
  
